@@ -1,0 +1,13 @@
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, span, p, button, input, div {
+  font-family: 'Roboto', sans-serif;
+}
