@@ -1,0 +1,64 @@
+.headerContainer {
+  display: flex;
+  height: 64px;
+  max-height: 64px;
+  width: 100%;
+  padding: 0px 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  
+  img {
+    height: 24px;
+  }
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--gray-200);
+    margin-left: 2rem;
+
+    &:hover {
+      color: var(--gray-100);
+    }
+
+    svg {
+      margin-right: .7rem;
+    }
+  }
+}
+
+.user {
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.2rem;
+
+  svg {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+}
+
+.button {
+  button {
+    padding: 0 .5rem;
+    height: 32px;
+    align-items: center;
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      font-family: 700;
+    }
+  }
+}

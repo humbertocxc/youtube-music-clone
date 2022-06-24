@@ -1,0 +1,14 @@
+import Page from './Page';
+import styles from './styles.module.scss';
+
+
+export default function Pages() {
+  return(
+    <nav className={styles.pages} >
+      <Page name="Início" url="" />
+      <Page name="Explorar" url="" />
+      <Page name="Biblioteca" url="" />
+      <Page name="Pesquisar" url="" icon={true} />
+    </nav>
+  )
+}
