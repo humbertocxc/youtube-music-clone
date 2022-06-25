@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+.leftHeader {
+  display: flex;
+  align-items: center;
+
+  button {
+    padding: .8rem;
+  }
+}
+
 .headerText {
   margin-bottom: -4rem;
   h5 {
@@ -20,10 +29,21 @@
   }
 }
 
-.buttons {
+.arrows {
   display: flex;
 
   svg {
     padding: 1rem;
+  }
+}
+
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    border-radius: 100%;
   }
 }

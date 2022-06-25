@@ -110,22 +110,22 @@ export const topMusics = {
       album: 'Blinding Lights'
     }
   },
-  // {
-  //   id: 12,
-  //   data: {
-  //     img: '1.jpg',
-  //     name: 'Blinding Lights',
-  //     artist: 'The Weekend',
-  //     album: 'Blinding Lights'
-  //   }
-  // },
-  // {
-  //   id: 13,
-  //   data: {
-  //     img: '1.jpg',
-  //     name: 'Blinding Lights',
-  //     artist: 'The Weekend',
-  //     album: 'Blinding Lights'
-  //   }
-  // }
+  {
+    id: 12,
+    data: {
+      img: '1.jpg',
+      name: 'Blinding Lights',
+      artist: 'The Weekend',
+      album: 'Blinding Lights'
+    }
+  },
+  {
+    id: 13,
+    data: {
+      img: '1.jpg',
+      name: 'Blinding Lights',
+      artist: 'The Weekend',
+      album: 'Blinding Lights'
+    }
+  }
 ]}

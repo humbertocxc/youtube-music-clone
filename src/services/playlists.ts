@@ -37,29 +37,29 @@ export const hits = {
       artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
       img: '1.jpg'
     },
-    // {
-    //   id: 6,
-    //   name: 'Topnejo',
-    //   artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
-    //   img: '1.jpg'
-    // },
-    // {
-    //   id: 7,
-    //   name: 'Topnejo',
-    //   artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
-    //   img: '1.jpg'
-    // },
-    // {
-    //   id: 8,
-    //   name: 'Topnejo',
-    //   artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
-    //   img: '1.jpg'
-    // },
-    // {
-    //   id: 9,
-    //   name: 'Topnejo',
-    //   artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
-    //   img: '1.jpg'
-    // },
+    {
+      id: 6,
+      name: 'Topnejo',
+      artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
+      img: '1.jpg'
+    },
+    {
+      id: 7,
+      name: 'Topnejo',
+      artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
+      img: '1.jpg'
+    },
+    {
+      id: 8,
+      name: 'Topnejo',
+      artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
+      img: '1.jpg'
+    },
+    {
+      id: 9,
+      name: 'Topnejo',
+      artists: 'Henrique & Juliano, Marília Mendonça, Hugo &...',
+      img: '1.jpg'
+    },
   ]
 }

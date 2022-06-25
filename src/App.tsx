@@ -27,11 +27,6 @@ export default function App() {
         title={hits.title}
         data={hits.data}
       />
-      
-      <Playlists
-        title={hits.title}
-        data={hits.data}
-      />
     </>
   )
 }

@@ -9,6 +9,9 @@
   flex-wrap: wrap;
   height: 260px;
   margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
 
 .item {
@@ -29,7 +32,7 @@
 
 .topText {
   display: block;
-  padding-top: 16px;
+  margin-top: 16px;
 
   h3 {
     font-size: 14px;
