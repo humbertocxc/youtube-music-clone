@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.headerText {
+  margin-bottom: -4rem;
+  h5 {
+    color: var(--gray-200);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  h6 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}
+
+.buttons {
+  display: flex;
+
+  svg {
+    padding: 1rem;
+  }
+}

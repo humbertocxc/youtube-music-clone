@@ -3,7 +3,7 @@ import { BsDot } from 'react-icons/bs';
 import { IoIosRadio } from 'react-icons/io';
 
 
-interface Top {
+export interface Top {
   id: number,
   data: {
     img: string,

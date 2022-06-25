@@ -1,16 +1,22 @@
-import { topMusics } from "../../services/topMusics";
 import styles from './styles.module.scss';
 import Item from "./Item";
-import Header from "./Header";
+import Header from "../Utils/Header";
+import { Top as TopProps } from './Item';
+
+interface Props {
+  text1: string,
+  text2: string,
+  data: TopProps[]
+}
 
 
-export default function Top() {
+export default function Top({ data, text1, text2 }: Props) {
   return (
     <div className={styles.container} >
-      <Header />
+      <Header text1={text1} text2={text2} />
       <div className={styles.content} >
         {
-          topMusics.map(item => <Item key={item.id} id={item.id} data={item.data} />)
+          data.map(item => <Item key={item.id} id={item.id} data={item.data} />)
         }
       </div>
     </div>
