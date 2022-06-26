@@ -11,7 +11,7 @@ interface PlaylistsProps {
 export default function Playlists({ title, data }: PlaylistsProps) {
   return(
     <div className={styles.container} >
-      <Top text2={title} />
+      <Top text1={title} />
       <div className={styles.content} >
         {
           data.map(item =>
