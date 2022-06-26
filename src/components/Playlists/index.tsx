@@ -1,4 +1,4 @@
-import Header from '../Utils/Header';
+import Top from '../Utils/Top';
 import Playlist, { PlaylistProps } from './Playlist';
 import styles from './styles.module.scss';
 
@@ -11,7 +11,7 @@ interface PlaylistsProps {
 export default function Playlists({ title, data }: PlaylistsProps) {
   return(
     <div className={styles.container} >
-      <Header text2={title} />
+      <Top text2={title} />
       <div className={styles.content} >
         {
           data.map(item =>

@@ -1,9 +1,9 @@
-import { topMusics } from "./services/topMusics";
-import { hits } from './services/playlists';
+import { forYou } from "./services/musics";
+import { hits, energeticas, acusticos } from './services/playlists';
 
 import Header from './components/Header';
 import Playlists from './components/Playlists';
-import Top from './components/Top';
+import Musics from './components/Musics';
 import './styles/global.scss';
 
 
@@ -12,10 +12,10 @@ export default function App() {
     <>
       <Header />
 
-      <Top
-        data={topMusics.data}
-        text1={topMusics.text1}
-        text2={topMusics.text2}
+      <Musics
+        data={forYou.data}
+        text1={forYou.text1}
+        text2={forYou.text2}
       />
       
       <Playlists
@@ -24,8 +24,13 @@ export default function App() {
       />
       
       <Playlists
-        title={hits.title}
-        data={hits.data}
+        title={energeticas.title}
+        data={energeticas.data}
+      />
+      
+      <Playlists
+        title={acusticos.title}
+        data={acusticos.data}
       />
     </>
   )

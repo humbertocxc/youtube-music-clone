@@ -16,12 +16,15 @@
 
 .item {
   box-sizing: border-box;
-  margin: 0 0 16px 16px;
-  width: 33%;
-  max-height: 48px;
+  margin: 0 0 1rem 2rem;
+  width: 380px;
+  height: 48px;
   display: flex;
   cursor: pointer;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 
   img {
     height: 48px;
@@ -37,6 +40,7 @@
   h3 {
     font-size: 14px;
     margin-bottom: 8px;
+    font-weight: 500;
   }
 }
 
@@ -49,6 +53,7 @@
     font-size: 14px;
     color: var(--gray-200);
     margin-top: -16px;
+    font-weight: 500;
   }
 
   h4 {

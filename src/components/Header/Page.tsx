@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
-
 interface PageProps {
   name: string,
   url: string,
@@ -19,7 +18,7 @@ export default function Page({ name, url, icon }: PageProps) {
   return (
     <a href={url} onClick={clickSearch} >
       {icon?
-        <AiOutlineSearch size="20px" color="white" /> : <></>
+        <AiOutlineSearch size="20px" /> : <></>
       }
       {name}
     </a>

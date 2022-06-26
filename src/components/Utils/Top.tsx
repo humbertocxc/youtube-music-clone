@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 
-export default function Header({ text1, text2, size }: HeaderProps) {
+export default function Top({ text1, text2, size }: HeaderProps) {
   return(
     <div className={styles.header}>
       <div className={styles.leftHeader}>

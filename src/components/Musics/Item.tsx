@@ -3,20 +3,20 @@ import { BsDot } from 'react-icons/bs';
 import { IoIosRadio } from 'react-icons/io';
 
 
-export interface Top {
+export interface MusicProps {
   id: number,
   data: {
     img: string,
     name: string,
     artist: string,
-    album: string
+    album: string,
   }
 }
 
-export default function Item({ id, data }: Top) {
+export default function Item({ data }: MusicProps) {
   return(
     <div className={styles.item} >
-      <img src={`imgs/top/${data.img}`} alt="" />
+      <img src={`imgs/musics/${data.img}`} alt="" />
       <div className={styles.topText}>
         <h3>{data.name}</h3>
         <div className={styles.bottomText}>
