@@ -1,7 +1,7 @@
 import { MdOutlineCastConnected } from 'react-icons/md';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import styles from './styles.module.scss';
-import Logo from '../Utils/Logo';
+import Logo from '../Top/Logo';
 
 
 export default function User() {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useMediaQuery } from "react-responsive";
 
 interface PageProps {
   name: string,
@@ -9,6 +10,7 @@ interface PageProps {
 
 
 export default function Page({ name, url, icon }: PageProps) {
+  const showText = useMediaQuery({query: '(min-width: 1130px)'})
   const [search, setSearch] = useState(false);
 
   function clickSearch() {
@@ -17,10 +19,8 @@ export default function Page({ name, url, icon }: PageProps) {
   
   return (
     <a href={url} onClick={clickSearch} >
-      {icon?
-        <AiOutlineSearch size="20px" /> : <></>
-      }
-      {name}
+      {icon ? <AiOutlineSearch size="20px" /> : <></> }
+      {!icon || showText ? name : <></> }
     </a>
   )
 }

@@ -9,7 +9,7 @@ export default function Pages() {
       <Page name="Explorar" url="" />
       <Page name="Biblioteca" url="" />
       <Page name="Upgrade" url="" />
-      <Page name="" url="" icon={true} />
+      <Page name="Pesquisar" url="" icon={true} />
     </nav>
   )
 }

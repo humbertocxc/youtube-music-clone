@@ -1,4 +1,4 @@
-import Top from '../Utils/Top';
+import Top from '../Top';
 import Playlist, { PlaylistProps } from './Playlist';
 import styles from './styles.module.scss';
 

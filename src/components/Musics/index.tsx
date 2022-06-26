@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import Item from "./Item";
-import Top from "../Utils/Top";
+import Top from "../Top";
 import { MusicProps } from './Item';
 
 interface Props {
