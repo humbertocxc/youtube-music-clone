@@ -16,7 +16,7 @@ export interface MusicProps {
 export default function Item({ data }: MusicProps) {
   return(
     <div className={styles.item} >
-      <img src={`imgs/musics/${data.img}`} alt="" />
+      <img src={`imgs/musics/${data.img}`} alt={data.album} />
       <div className={styles.topText}>
         <h3>{data.name}</h3>
         <div className={styles.bottomText}>

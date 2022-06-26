@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/prefer-screen-queries */
 import { render } from '@testing-library/react';
 
 import Playlists from '../../components/Playlists';
@@ -10,18 +11,17 @@ const data = {
       name: 'RELEASED',
       artists: 'Sorriso Maroto, Lil Nas X, Imagine Dragons e Charli...',
       img: 'novidades/1.jpg'
-    },
-    {
-      id: 1,
-      name: 'Estação Gospel',
-      artists: 'Jessé Aguiar, Fernanda Brum, Eurice Diniz e...',
-      img: 'novidades/2.jpg'
-    },
+    }
   ]
 }
 
 
-test('Renderiza o App corretamente', async () => {
-  render(<Playlists data={data.data} title={data.title} />);
-  expect(true).toBeTruthy();
+test('Mostrar os textos do topo e a foto corretamente', async () => {
+  const { getByText, getByAltText } = render(<Playlists data={data.data} title={data.title} />);
+  
+  expect(getByText(data.title)).toBeInTheDocument()
+
+  expect(getByAltText(data.data[0].name)).toBeInTheDocument()
+  expect(getByText(data.data[0].name)).toBeInTheDocument()
+  expect(getByText(data.data[0].artists)).toBeInTheDocument()
 });

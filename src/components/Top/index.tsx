@@ -13,7 +13,7 @@ export default function Top({ text1, text2, size }: HeaderProps) {
   return(
     <div className={styles.header}>
       <div className={styles.leftHeader}>
-        { size ? <Logo size={size} /> : <></> }
+        { size ? <Logo size={size} alt="H" /> : <></> }
 
         <div className={styles.headerText}>
           { text1 ? <h5>{text1}</h5> : <></> }

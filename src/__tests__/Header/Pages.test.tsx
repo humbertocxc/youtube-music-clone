@@ -1,17 +1,14 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 import { render } from '@testing-library/react';
 
-import Header from '../../components/Header';
+import Pages from '../../components/Header/Pages';
 
 
-test('Chama os ítens esperados do header', async () => {
-  const { getByText, getByAltText } = render(<Header />);
+test('Listar as páginas', async () => {
+  const { getByText } = render(<Pages />);
 
   expect(getByText('Início')).toBeInTheDocument();
   expect(getByText('Explorar')).toBeInTheDocument();
   expect(getByText('Biblioteca')).toBeInTheDocument();
   expect(getByText('Upgrade')).toBeInTheDocument();
-
-  expect(getByAltText('H')).toBeInTheDocument();
-  expect(getByAltText('YTMusic')).toBeInTheDocument();
 });

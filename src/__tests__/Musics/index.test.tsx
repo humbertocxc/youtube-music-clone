@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/prefer-screen-queries */
 import { render } from '@testing-library/react';
 
 import Musics from '../../components/Musics';
@@ -10,16 +11,21 @@ const data = {
       id: 0,
       data: {
         img: 'forYou/1.jpg',
-        name: 'Reconstrução',
+        name: 'Reconstrucao',
         artist: 'Gerson Rufino',
-        album: 'Reconstrução'
+        album: 'Reconstrucao'
       }
     },
   ]
 }
 
 
-test('Renderiza o App corretamente', async () => {
-  render(<Musics data={data.data} text2={data.text2} text1={data.text1} />);
-  expect(true).toBeTruthy();
+test('Mostrar os textos do topo e a foto corretamente', async () => {
+  const { getByText, getByAltText } = render(
+    <Musics data={data.data} text2={data.text2} text1={data.text1} />
+  );
+
+  expect(getByText(data.text1)).toBeInTheDocument()
+  expect(getByText(data.text2)).toBeInTheDocument()
+  expect(getByAltText('H')).toBeInTheDocument()
 });

@@ -1,14 +1,15 @@
 import styles from './styles.module.scss'
 
 interface LogoProps {
-  size: string
+  size: string,
+  alt: string
 }
 
 
-export default function Logo({ size }: LogoProps) {
+export default function Logo({ size, alt }: LogoProps) {
   return (
     <button className={styles.button}>
-      <img src='imgs/user.jpg' alt="H" height={size} />
+      <img src='imgs/user.jpg' alt={alt} height={size} />
     </button>
   )
 }
