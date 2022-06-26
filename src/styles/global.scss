@@ -4,6 +4,18 @@
 
   --gray-100: #eee;
   --gray-200: #aaa;
+  --gray-700: #444;
+  --gray-900: #111;
+
+}
+
+body::-webkit-scrollbar {   
+  background-color: var(--gray-900);
+  width: .7rem;  
+}
+
+body::-webkit-scrollbar-thumb {   
+  background-color: var(--gray-700);   
 }
 
 body {
