@@ -1,6 +1,6 @@
 export const forYou = {
-  text1: 'INICIAR RÁPIDO COM UMA MÚSICA',
-  text2: 'Escolhas Rápidas',
+  text1: 'ALGUMAS MÚSICAS PARA VOCÊ COMEÇAR',
+  text2: 'Olá, Humberto Gessinger',
   data: [
   {
     id: 0,
